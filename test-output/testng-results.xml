@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-06-30T07:52:47 AEST" name="Default suite" finished-at="2023-06-30T07:52:55 AEST" duration-ms="8302">
+    <groups>
+    </groups>
+    <test started-at="2023-06-30T07:52:47 AEST" name="Default test" finished-at="2023-06-30T07:52:55 AEST" duration-ms="8302">
+      <class name="api.test.User_Tests">
+        <test-method is-config="true" signature="setupData()[pri:0, instance:api.test.User_Tests@3e27ba32]" started-at="2023-06-30T07:52:47 AEST" name="setupData" finished-at="2023-06-30T07:52:47 AEST" duration-ms="120" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupData -->
+        <test-method signature="TC01_testPostUser()[pri:1, instance:api.test.User_Tests@3e27ba32]" started-at="2023-06-30T07:52:47 AEST" name="TC01_testPostUser" finished-at="2023-06-30T07:52:50 AEST" duration-ms="2706" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC01_testPostUser -->
+        <test-method signature="TC02testGetUserByname()[pri:2, instance:api.test.User_Tests@3e27ba32]" started-at="2023-06-30T07:52:50 AEST" name="TC02testGetUserByname" finished-at="2023-06-30T07:52:51 AEST" duration-ms="1298" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC02testGetUserByname -->
+        <test-method signature="TC03_testUpdateUser()[pri:3, instance:api.test.User_Tests@3e27ba32]" started-at="2023-06-30T07:52:51 AEST" name="TC03_testUpdateUser" finished-at="2023-06-30T07:52:54 AEST" duration-ms="2544" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC03_testUpdateUser -->
+        <test-method signature="TC004_DeleteUserByName()[pri:4, instance:api.test.User_Tests@3e27ba32]" started-at="2023-06-30T07:52:54 AEST" name="TC004_DeleteUserByName" finished-at="2023-06-30T07:52:55 AEST" duration-ms="1597" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC004_DeleteUserByName -->
+      </class> <!-- api.test.User_Tests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
