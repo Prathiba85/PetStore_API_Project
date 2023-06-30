@@ -1,191 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-30T11:10:32 AEST" name="PetSuite" finished-at="2023-06-30T11:10:49 AEST" duration-ms="17823">
+  <suite started-at="2023-06-30T16:43:22 AEST" name="Default suite" finished-at="2023-06-30T16:43:30 AEST" duration-ms="8475">
     <groups>
     </groups>
-    <test started-at="2023-06-30T11:10:32 AEST" name="PetTests" finished-at="2023-06-30T11:10:49 AEST" duration-ms="17823">
-      <class name="api.test.User_Tests">
-        <test-method is-config="true" signature="setupData()[pri:0, instance:api.test.User_Tests@58cbafc2]" started-at="2023-06-30T11:10:32 AEST" name="setupData" finished-at="2023-06-30T11:10:32 AEST" duration-ms="467" status="PASS">
+    <test started-at="2023-06-30T16:43:22 AEST" name="Default test" finished-at="2023-06-30T16:43:30 AEST" duration-ms="8475">
+      <class name="api.test.User_Tests2_Properties">
+        <test-method is-config="true" signature="setupData()[pri:0, instance:api.test.User_Tests2_Properties@3b0fe47a]" started-at="2023-06-30T16:43:22 AEST" name="setupData" finished-at="2023-06-30T16:43:22 AEST" duration-ms="460" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupData -->
-        <test-method signature="TC01_testCreateUser()[pri:1, instance:api.test.User_Tests@58cbafc2]" started-at="2023-06-30T11:10:32 AEST" name="TC01_testCreateUser" finished-at="2023-06-30T11:10:34 AEST" duration-ms="2132" status="PASS">
+        <test-method signature="TC01_testCreateUser()[pri:1, instance:api.test.User_Tests2_Properties@3b0fe47a]" started-at="2023-06-30T16:43:22 AEST" name="TC01_testCreateUser" finished-at="2023-06-30T16:43:25 AEST" duration-ms="2425" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC01_testCreateUser -->
-        <test-method signature="TC02testGetUserByname()[pri:2, instance:api.test.User_Tests@58cbafc2]" started-at="2023-06-30T11:10:34 AEST" name="TC02testGetUserByname" finished-at="2023-06-30T11:10:36 AEST" duration-ms="1232" status="PASS">
+        <test-method signature="TC02testGetUserByname()[pri:2, instance:api.test.User_Tests2_Properties@3b0fe47a]" started-at="2023-06-30T16:43:25 AEST" name="TC02testGetUserByname" finished-at="2023-06-30T16:43:26 AEST" duration-ms="1395" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC02testGetUserByname -->
-        <test-method signature="TC03_testUpdateUser()[pri:3, instance:api.test.User_Tests@58cbafc2]" started-at="2023-06-30T11:10:36 AEST" name="TC03_testUpdateUser" finished-at="2023-06-30T11:10:39 AEST" duration-ms="3232" status="PASS">
+        <test-method signature="TC03_testUpdateUser()[pri:3, instance:api.test.User_Tests2_Properties@3b0fe47a]" started-at="2023-06-30T16:43:26 AEST" name="TC03_testUpdateUser" finished-at="2023-06-30T16:43:29 AEST" duration-ms="2796" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC03_testUpdateUser -->
-        <test-method signature="TC004_DeleteUserByName()[pri:4, instance:api.test.User_Tests@58cbafc2]" started-at="2023-06-30T11:10:39 AEST" name="TC004_DeleteUserByName" finished-at="2023-06-30T11:10:41 AEST" duration-ms="1988" status="PASS">
+        <test-method signature="TC004_DeleteUserByName()[pri:4, instance:api.test.User_Tests2_Properties@3b0fe47a]" started-at="2023-06-30T16:43:29 AEST" name="TC004_DeleteUserByName" finished-at="2023-06-30T16:43:30 AEST" duration-ms="1349" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC004_DeleteUserByName -->
-      </class> <!-- api.test.User_Tests -->
-      <class name="api.test.DDTests">
-        <test-method signature="TC01_testPostUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:api.test.DDTests@795509d9]" started-at="2023-06-30T11:10:41 AEST" name="TC01_testPostUser" data-provider="Data" finished-at="2023-06-30T11:10:43 AEST" duration-ms="1222" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[1010]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[testuser1]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[John]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Canedy]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[a@gmail.com]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[test@1]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[1234567897]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC01_testPostUser -->
-        <test-method signature="TC01_testPostUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:api.test.DDTests@795509d9]" started-at="2023-06-30T11:10:43 AEST" name="TC01_testPostUser" data-provider="Data" finished-at="2023-06-30T11:10:44 AEST" duration-ms="1246" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[1020]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[testuser2]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Kim]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Kom]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[b@gmail.com]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[test@2]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[1234567897]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC01_testPostUser -->
-        <test-method signature="TC01_testPostUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:api.test.DDTests@795509d9]" started-at="2023-06-30T11:10:44 AEST" name="TC01_testPostUser" data-provider="Data" finished-at="2023-06-30T11:10:45 AEST" duration-ms="1314" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[1030]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[testuser3]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Smith]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Steve]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[c@gmail.com]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[test@3]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[1234567897]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC01_testPostUser -->
-        <test-method signature="TC02_testPostUser(java.lang.String)[pri:2, instance:api.test.DDTests@795509d9]" started-at="2023-06-30T11:10:45 AEST" name="TC02_testPostUser" data-provider="UserNames" finished-at="2023-06-30T11:10:46 AEST" duration-ms="1156" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[testuser1]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC02_testPostUser -->
-        <test-method signature="TC02_testPostUser(java.lang.String)[pri:2, instance:api.test.DDTests@795509d9]" started-at="2023-06-30T11:10:46 AEST" name="TC02_testPostUser" data-provider="UserNames" finished-at="2023-06-30T11:10:48 AEST" duration-ms="1415" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[testuser2]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC02_testPostUser -->
-        <test-method signature="TC02_testPostUser(java.lang.String)[pri:2, instance:api.test.DDTests@795509d9]" started-at="2023-06-30T11:10:48 AEST" name="TC02_testPostUser" data-provider="UserNames" finished-at="2023-06-30T11:10:49 AEST" duration-ms="1644" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[testuser3]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC02_testPostUser -->
-      </class> <!-- api.test.DDTests -->
-    </test> <!-- PetTests -->
-  </suite> <!-- PetSuite -->
+      </class> <!-- api.test.User_Tests2_Properties -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
