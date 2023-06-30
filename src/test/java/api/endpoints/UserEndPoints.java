@@ -15,7 +15,7 @@ import io.restassured.http.ContentType;
 //We will call end points in test methods and validate in test methods
 public class UserEndPoints {
 	
-	public static Response createUser(User Payload)
+	public static Response createUser(User Payload, String user)
 	{
 		//What type of data you are sending in given will be given in swagger documents
 	Response response= given()

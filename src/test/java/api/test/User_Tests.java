@@ -2,6 +2,8 @@ package api.test;
 
 import static io.restassured.RestAssured.given;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -23,7 +25,7 @@ public class User_Tests {
 	String password;
 	String phone;
 	int userStatus =0;
-	
+	public Logger logger;
 	@BeforeClass
 	public void setupData()
 	{
@@ -36,16 +38,22 @@ public class User_Tests {
 		userPayload.setEmail(fs.internet().safeEmailAddress());
 		userPayload.setPassword(fs.internet().password(5, 10));
 		userPayload.setPhone(fs.phoneNumber().cellPhone());
+		//logs
+		logger = LogManager.getLogger(this.getClass());
+		logger.info("************* Creating user ***********");
 
 		
 	}
-	
 	@Test (priority =1)
-	public void TC01_testPostUser()
+	public void TC01_testCreateUser()
 	{
-		Response response = UserEndPoints.createUser(userPayload);
+		
+		String user = this.userPayload.getUsername();
+		Response response = UserEndPoints.createUser(userPayload, user);
 		response.then().log().all();
 		Assert.assertEquals(response.getStatusCode(), 200);
+		logger.info("************* User Created ***********");
+		
 	}
 	
 	@Test (priority =2)
@@ -58,6 +66,7 @@ public class User_Tests {
 		System.out.println(user);
 		response.then().log().all();
 		Assert.assertEquals(response.getStatusCode(),200);
+		logger.info("************* Get USer Name ***********");
 	}
 	
 	@Test (priority =3)
@@ -78,6 +87,8 @@ public class User_Tests {
 				.when()
 				.get(Routes.get_url);
 		Assert.assertEquals(responseafterupdate.getStatusCode(), 200);
+		
+		logger.info("************* Updated User Details ***********");
 	}
 	@Test (priority =4)
 	public void TC004_DeleteUserByName()
@@ -85,6 +96,7 @@ public class User_Tests {
 		String user = this.userPayload.getUsername();
 		Response response = UserEndPoints.deleteUser(user);
 		Assert.assertEquals(response.getStatusCode(), 200);
+		logger.info("************* Deleted User Details ***********");
 	}
 	}
 
